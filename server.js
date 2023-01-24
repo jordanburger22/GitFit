@@ -25,7 +25,6 @@ app.use('/profile/exercises', require('./routes/userExcerciseRouter.js'))
 app.use('/profile/allExercises', require('./routes/exerciseRouter.js'))
 
 
-
 app.use((err, req, res, next) => {
     console.log(err)
     if(err.name === 'UnathorizedError'){

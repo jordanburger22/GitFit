@@ -14,6 +14,7 @@ import AddUserExercise from './components/AddUserExercise';
 
 function App() {
 
+
   const {
     token, 
     getBaseExercises,
@@ -33,9 +34,6 @@ function App() {
     editExercise
   } = useContext(userContext)
 
-  useEffect(() => {
-    getBaseExercises()
-  }, [])
 
   return (
     <div className="App">

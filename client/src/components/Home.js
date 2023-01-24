@@ -2,6 +2,9 @@ import { useEffect } from "react"
 
 function Home(){
 
+    useEffect(() => {
+        getBaseExercises()
+      }, [])
 
     return(
         <div className="home-container-div">
