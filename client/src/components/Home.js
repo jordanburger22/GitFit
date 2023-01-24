@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 
-function Home(){
+function Home(props){
+
+    const {getBaseExercises} = props
 
     useEffect(() => {
         getBaseExercises()
